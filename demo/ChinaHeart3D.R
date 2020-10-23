@@ -1,6 +1,6 @@
 ## 3D heart with a Chinese five-star flag
 ## Author: Yixuan Qiu <yixuan.qiu@cos.name>
-## original code in a Chinese forum: http://cos.name/cn/topic/16743
+## original code in a Chinese forum: https://d.cosx.org/d/16743
 ## this code was written to celebrate China's 60 anniversary
 if (!require("rgl")) stop("You need the rgl package to generate the 3D heart!")
 xtheta = function(x, theta, y, w = 0, tt = 0) {
@@ -40,7 +40,7 @@ for (i in 1:length(y)) {
 }
 yy = matrix(rep(y0, n), n, length(y0), byrow = TRUE)
 library(rgl)
-persp3d(zz, xx, yy, col = "red", xlim = c(-1, 1), ylim = c(-1, 1), zlim = c(-1, 1),
+persp3d(zz, xx, yy, col = "red", xlim = c(-1.2, 1.2), ylim = c(-1.2, 1.2), zlim = c(-1, 1),
         axes = FALSE, box = FALSE, xlab = "", ylab = "", zlab = "")
 fy = function(y, pars) {
     z = pars[1]
